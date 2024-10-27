@@ -1,7 +1,7 @@
 
 # Sysfoo Application
 
-A Devops Learning App  is necessary
+A Devops Learning App  is necessary a  to improvbe our skills
 
 ## About the Application
 
