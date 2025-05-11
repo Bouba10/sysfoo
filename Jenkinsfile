@@ -21,8 +21,8 @@ pipeline {
         sh '''#Truncate the GIT_COMMIT to the first 7 characters
 GIT_SHORT_COMMIT=$(echo $GIT_COMMIT | cut -c 1-7)
 # Set the version using Maven
-mvn versions: set -DnewVersion="$GIT SHORT COMMIT"
-mvn versions: commit'''
+mvn versions:set -DnewVersion="$GIT SHORT COMMIT"
+mvn versions:commit'''
         sh 'mvn package -DskipTests'
         archiveArtifacts '**/target/*.jar'
       }
